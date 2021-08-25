@@ -1,7 +1,7 @@
 P = int(input())
 def getFactorial(i):
     tmp = 1
-    for j in range(1, i):
+    for j in range(1, i + 1):
         tmp *= j
     return tmp
 
