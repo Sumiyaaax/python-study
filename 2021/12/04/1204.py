@@ -9,3 +9,5 @@ print(df.info())
 cols = df.columns.values.tolist()
 print(df.iloc[:2])
 print(cols)
+df = df[['医療機関ID','医療機関名']]
+print(df)
