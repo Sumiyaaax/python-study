@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 CSV_FILE='covid-19_daily_survey.csv'
-OUTPUT_CSV_FILE='output_2.csv'
+OUTPUT_CSV_FILE='output_1.csv'
 df = pd.read_csv(CSV_FILE)
 print(df)
 print(len(df))
@@ -17,3 +17,4 @@ df.to_csv(OUTPUT_CSV_FILE, index=False)
 print(os.listdir('./'))
 os.remove('output_1.csv')
 print(os.listdir('./'))
+os.mkdir('test')
