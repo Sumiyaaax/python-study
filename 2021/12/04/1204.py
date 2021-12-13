@@ -1,5 +1,6 @@
 import pandas as pd
 import os
+import datetime
 
 CSV_FILE='covid-19_daily_survey.csv'
 OUTPUT_CSV_FILE='output_1.csv'
@@ -21,3 +22,7 @@ print(os.listdir('./'))
 print('============walk============')
 print(os.walk('./'))
 os.system('ls -l')
+dt_now = datetime.datetime.now()
+print(dt_now.year)
+print(dt_now.month)
+print(dt_now.day)
