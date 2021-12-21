@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 import datetime
-
+import openpyxl
 CSV_FILE='covid-19_daily_survey.csv'
 OUTPUT_CSV_FILE='output_1.csv'
 df = pd.read_csv(CSV_FILE)
@@ -31,4 +31,5 @@ df.set_index('医療機関ID', inplace=True)
 print(df)
 df = df.sort_values(by='医療機関ID', ascending=False)
 print(df)
-df.to_csv('./20211221.csv')
+df.to_csv('./20211222.csv')
+df.to_excel('20211222.xlsx')
