@@ -6,3 +6,8 @@ INPUT_SHEET_NAME = INPUT_BOOK.sheet_names
 print(INPUT_SHEET_NAME)
 df = INPUT_BOOK.parse(INPUT_SHEET_NAME[0])
 print(df)
+
+wb = openpyxl.Workbook()
+wb.create_sheet()
+sheet_name_list = wb.sheetnames
+print(sheet_name_list)
